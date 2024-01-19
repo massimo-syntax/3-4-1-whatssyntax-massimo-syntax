@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.syntax_institut.whatssyntax.data.ui.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_chatViewFragment"
+            app:destination="@id/chatViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="com.syntax_institut.whatssyntax.data.ui.CallsFragment"
+        android:label="fragment_calls"
+        tools:layout="@layout/fragment_calls" >
+        <argument
+            android:name="number"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.syntax_institut.whatssyntax.data.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <argument
+            android:name="pro_Name"
+            app:argType="string" />
+        <argument
+            android:name="pro_Number"
+            app:argType="string" />
+        <argument
+            android:name="pro_Img"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.syntax_institut.whatssyntax.data.ui.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" >
+        <action
+            android:id="@+id/action_statusFragment_to_statusView"
+            app:destination="@id/statusView" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusView"
+        android:name="com.syntax_institut.whatssyntax.data.ui.StatusViewFragment"
+        android:label="statusView"
+        tools:layout="@layout/fragment_status_view">
+        <argument
+            android:name="status"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_statusView_to_statusFragment"
+            app:destination="@id/statusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatViewFragment"
+        android:name="com.syntax_institut.whatssyntax.data.ui.ChatViewFragment"
+        android:label="fragment_chat_view"
+        tools:layout="@layout/fragment_chat_view" >
+        <action
+            android:id="@+id/action_chatViewFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <argument
+            android:name="contact"
+            app:argType="string" />
+    </fragment>
+</navigation>

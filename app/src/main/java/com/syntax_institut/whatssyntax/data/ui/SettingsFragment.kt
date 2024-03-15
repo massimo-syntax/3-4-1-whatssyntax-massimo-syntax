@@ -40,7 +40,6 @@ class SettingsFragment : Fragment() {
 
         binding.bvSave.setOnClickListener {
 
-
             Toast.makeText(requireContext(), "FRAGMENT WAS SETTINGS, RENAME", Toast.LENGTH_SHORT).show()
         }
 

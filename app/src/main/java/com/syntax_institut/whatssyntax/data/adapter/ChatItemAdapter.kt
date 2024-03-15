@@ -6,7 +6,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.syntax_institut.whatssyntax.data.model.Chat
 import com.syntax_institut.whatssyntax.data.ui.ChatFragmentDirections
-import com.syntax_institut.whatssyntax.databinding.ChatListItemBinding
+import com.syntax_institut.whatssyntax.databinding.ArticlesListItemBinding
 
 
 class ChatItemAdapter(
@@ -14,13 +14,13 @@ class ChatItemAdapter(
 ) : RecyclerView.Adapter<ChatItemAdapter.ItemViewHolder>() {
 
 
-    inner class ItemViewHolder(val binding: ChatListItemBinding) :
+    inner class ItemViewHolder(val binding: ArticlesListItemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val binding =
-            ChatListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ArticlesListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ItemViewHolder(binding)
     }
 

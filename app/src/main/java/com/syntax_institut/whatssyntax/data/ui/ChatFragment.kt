@@ -10,18 +10,18 @@ import com.syntax_institut.whatssyntax.data.Datasource
 import com.syntax_institut.whatssyntax.data.adapter.ChatItemAdapter
 import com.syntax_institut.whatssyntax.data.adapter.ChatViewAdapter
 import com.syntax_institut.whatssyntax.data.model.Chat
-import com.syntax_institut.whatssyntax.databinding.FragmentChatBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentArticlesBinding
 
 
 class ChatFragment : Fragment() {
-    private lateinit var binding: FragmentChatBinding
+    private lateinit var binding: FragmentArticlesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentChatBinding.inflate(layoutInflater)
+        binding = FragmentArticlesBinding.inflate(layoutInflater)
         return binding.root
 
     }

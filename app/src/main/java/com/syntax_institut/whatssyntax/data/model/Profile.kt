@@ -1,7 +1,7 @@
 package com.syntax_institut.whatssyntax.data.model
 
 data class Profile(
-    var name: String,
-    var number: String,
+    var userId: String,
+    var userName: String,
     var image: Int
 )

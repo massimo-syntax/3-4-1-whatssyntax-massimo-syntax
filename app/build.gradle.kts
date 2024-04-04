@@ -63,4 +63,18 @@ dependencies {
     implementation ("androidx.room:room-ktx:$2.4.2")
     kapt ("androidx.room:room-compiler:$2.4.2")
 
+
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation ("com.squareup.moshi:moshi-kotlin:1.15.0")
+
+    // Coil
+    implementation ("io.coil-kt:coil:2.4.0")
+
+    // Room Dependencies
+    implementation ("androidx.room:room-runtime:2.5.2")
+    kapt ("androidx.room:room-compiler:2.5.2")
+    implementation ("androidx.room:room-ktx:2.5.2")
+
 }

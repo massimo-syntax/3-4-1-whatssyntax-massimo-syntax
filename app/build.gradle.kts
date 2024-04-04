@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs.kotlin")
+    id("kotlin-kapt")
 }
 
 android {
@@ -53,8 +54,13 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
 
-    /// Navication
+    /// NAVBAR
     implementation ("androidx.navigation:navigation-fragment:2.7.6")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.6")
+
+    //ROOM DATABASE
+    implementation ("androidx.room:room-runtime:$2.4.2")
+    implementation ("androidx.room:room-ktx:$2.4.2")
+    kapt ("androidx.room:room-compiler:$2.4.2")
 
 }

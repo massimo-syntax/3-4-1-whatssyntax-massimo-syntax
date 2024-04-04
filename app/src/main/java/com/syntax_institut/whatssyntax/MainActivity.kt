@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         // API
         // https://fakenews.squirro.com/news/entertainment
+        // https://fakenews.squirro.com/news/entertainment?count=25
 
         val navHost = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
         binding.bottomNav.setupWithNavController(navHost.navController)
